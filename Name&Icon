@@ -1,0 +1,30 @@
+1) Using Manual Approch
+------------------------
+1) Paste required image in follwing path
+	 your_app\android\app\src\main\res\drawable
+
+
+2) Configire icon in AndroidManifest.xml
+----------------------------------------
+		android:label="AppName"
+    android:icon="@drawable/iconName"
+
+
+
+2) Using dependency
+--------------------
+Make changes in pubspect.ymal file:
+
+flutter_launcher_icons: "^0.7.3"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+
+
+flutter_launcher_name: "^0.0.1"
+  
+flutter_launcher_name:
+  name: "yourNewAppLauncherName"
